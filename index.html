@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link href="styles/main.css" rel="stylesheet">
+    <title>Biblioteca Virtual de Aguas Subterráneas</title>
+</head>
+<body>
+<br>
+<br>    
+<nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+  <div class="container">
+  <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+      <span class="sr-only">Interruptor de Navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="https://sigagis.conagua.gob.mx/gas1" target= "_blank"><img src="./images/Logo_CONAGUA_W_I.png" align="left" height="25" width="25"  />Gerencia de Aguas Subterráneas | Biblioteca Virtual de Aguas Subterráneas</a>
+
+</div>
+  <div class="collapse navbar-collapse" id="subenlaces">
+      <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Información<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#" data-toggle="modal" data-target="#bienvenidaModal">Acerca de</a></li>
+              <!-- <li><a href="download/c_acuiferos_09112023.zip" target="_blank">Descargar datos</a></li> -->
+              <!-- <li><a href="download/2023_ACUÍFEROS_DMA.pdf" target="_blank">Metadatos</a></li> -->
+          </ul>
+      </li>
+      </ul>
+  </div>
+  </div>
+</nav>        
+<br>
+<div style="display: flex; justify-content: center; overflow: hidden;">
+  <!--1600x865-->
+  <iframe title="TABLERO ESTUDIOS V114splocal" width="1600" height="865" src="https://app.powerbi.com/view?r=eyJrIjoiZGFkZGNlYTYtMDVhNC00YjM5LTg0ZmYtNjBiMzk1NzY3YzBlIiwidCI6IjZkOGZkOWQzLTliMmMtNDc3Yi1iNDdjLTBlNTIzOGM5MmZlZiJ9" frameborder="0" allowFullScreen="true"></iframe>
+  <script src="js/gobmx.js"></script>
+ <!-- Termina JS Identidad Gráfica Institucional -->
+</body>    
+<div class="modal fade" id="bienvenidaModal" tabindex="-1" role="dialog" aria-labelledby="bienvenidaModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="bienvenidaModalLabel">Consulta de Estudios, 19/03/2023</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Contenido de la leyenda -->
+        <center><img src="images/logo1.png" width="200px" height="80px"></a></center>
+        <center><h4><p>Subdirección General Técnica</p></h4></center>
+        <center><br><h4><p>Gerencia de Aguas Subterráneas</p></h4></center>
+        <center><br><p>Consulta del Acervo de Estudios de la Biblioteca de Aguas Subterráneas, realizado por la Subgerencia de Información Geográfica del Agua (SIGA).</p> 
+        <p></b></p>
+        <br><p>Versión 4.0, septiembre de 2024.</p></center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</html>

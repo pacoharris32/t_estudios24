@@ -1,0 +1,150 @@
+html, body {
+height: 100%;
+margin: 0;
+}
+.leaflet-container {
+height: 100%;
+width: 100%;
+max-width: 100%;
+max-height: 100%;
+}
+/* Estilo para el widget Search */
+.leaflet-control-search-form input {
+    font-size: 14px!important;
+}
+/* Estilo personalizado para las etiquetas de acuíferos */
+.acuifero-tooltip {
+    font-size: 16px; /* Tamaño de fuente de 14 puntos */
+    background: #C2B493;
+    fill-opacity: 0.6;
+}
+
+.popup-acuifero {
+ /*   font-size: 14px; /* Tamaño de fuente deseado */ 
+    font: 14px/16px Montserrat, Arial, Helvetica, sans-serif;
+
+}
+
+
+
+/* Estilo para el widget Control Layers */
+.leaflet-control-layers label {
+    font-size: 14px!important;
+}
+
+	
+#map { width: 100%; height: 100%; }
+
+.info {
+padding: 6px 8px;
+font: 14px/16px Montserrat, Arial, Helvetica, sans-serif;
+background: #C2B493; 
+background: rgba(255,255,255,0.8);
+box-shadow: 0 0 15px rgba(0,0,0,1.0);
+border-radius: 5px;
+} 
+
+.info h4 { 
+    margin: 0 0 5px;
+    color: #5E0404;
+    font: 16px/18px Arial, Helvetica, sans-serif;
+ }
+
+ .acuifero-label {
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+
+}
+
+/* Estilos para la barra lateral */
+.leaflet-sidebar {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; /* Ancho de la barra lateral */
+    z-index: 1000;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+/* Estilos para los tabs de la barra lateral */
+.leaflet-sidebar-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.leaflet-sidebar-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.leaflet-sidebar-tabs li {
+    display: block;
+}
+
+.leaflet-sidebar-tabs a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.leaflet-sidebar-tabs a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el contenido de la barra lateral */
+.leaflet-sidebar-content {
+    background: #fff;
+    border-left: 1px solid #ccc;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+}
+
+.leaflet-sidebar-pane {
+    padding: 15px;
+}
+
+.tabla-atributos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-atributos th,
+.tabla-atributos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-atributos th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para la barra lateral colapsada */
+.leaflet-sidebar.collapsed {
+    width: 40px;
+}
+
+.leaflet-sidebar.collapsed .leaflet-sidebar-tabs a {
+    width: 40px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.leaflet-sidebar.collapsed .leaflet-sidebar-content {
+    display: none;
+}
